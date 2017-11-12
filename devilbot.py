@@ -29,8 +29,8 @@ def random_definition():
                 print("Duplicate selected. Trying again.")
                 return random_definition()
             else:
-                print(definition)
-                # api.update_status(definition)
+                # print(definition)
+                api.update_status(definition)
     except tweepy.TweepError as e:
         print(e.reason)
         sleep(2)
